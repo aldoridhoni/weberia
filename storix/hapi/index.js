@@ -18,15 +18,20 @@ server.route({
   method: 'GET',
   path: '/',
   handler: function (request, reply) {
-    var r = request.server.plugins['storix'].rethinkdb;
-    var conn = request.server.plugins['storix'].connection;
+    // could be these:
+    //var r = request.server.plugins['storix'].rethinkdb;
+    //var conn = request.server.plugins['storix'].connection;
+    // or these:
+    var r = server.plugins['storix'].rethinkdb;
+    var conn = server.plugins['storix'].connection;
+    //
     reply(r.dbList().run(conn));
   }
 });
 
 server.start((err) => {
-    if (err) {
-        throw err;
-    }
-    server.log('Server running at:', server.info.uri);
+  if (err) {
+    throw err;
+  }
+  server.log('Server running at:', server.info.uri);
 });

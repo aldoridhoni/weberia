@@ -17,6 +17,6 @@
   "author": "Bambang Purnomosidi D. P.",
   "license": "Apache-2.0",
   "dependencies": {
-    "hapi": "^12.x.x"
+    "hapi": "^13.x.x"
   }
 }

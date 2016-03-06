@@ -10,11 +10,11 @@
     "test": "mocha spec"
   },
   "peerDependencies": {
-    "hapi": "^12.x.x"
+    "hapi": "^13.x.x"
   },
   "dependencies": {
-    "joi": "^7.1.0",
-    "jsonld": "^0.4.4",
-    "rethinkdb": "^2.2.1"
+    "joi": "^7.3.0",
+    "jsonld": "^0.4.6",
+    "rethinkdb": "^2.2.2"
   }
 }
